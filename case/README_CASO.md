@@ -19,6 +19,8 @@ A malha é gerada usando o utilitário **blockMesh** com:
 - 1 célula na direção Z (2D)
 - Total: 400 células
 
+**Nota**: Esta é uma malha demonstrativa. Para simulações de produção, recomenda-se realizar estudos de refinamento de malha para garantir independência da solução. Malhas típicas podem ter 100×100 células ou mais, dependendo da complexidade do escoamento.
+
 ### Fronteiras
 
 1. **inlet**: Face de entrada (x = 0)
@@ -160,10 +162,12 @@ Para adaptar este caso às suas necessidades:
 Para verificar a convergência:
 
 ```bash
-# Visualizar resíduos
-gnuplot
-# ou usar foamLog para extrair dados de log
+# Extrair dados de log usando foamLog
 foamLog log.simpleFoam
+
+# Os arquivos de resíduos serão criados em postProcessing/logs/
+# Visualizar resíduos com gnuplot (exemplo para pressão)
+gnuplot -p -e "plot 'postProcessing/logs/0/residuals.dat' using 1:2 with lines title 'p residual'"
 ```
 
 ## Referências
