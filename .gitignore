@@ -1,0 +1,49 @@
+# OpenFOAM result directories
+[1-9]*
+[0-9][0-9]*
+!0
+!0.orig
+
+# Log files
+log.*
+*.log
+
+# Processor directories
+processor*
+
+# Dynamic code compilation
+dynamicCode/
+
+# VTK files
+*.vtk
+VTK/
+
+# ParaView state files
+*.pvsm
+*.foam
+
+# Time directories with processor data
+postProcessing/
+
+# Mesh conversion files
+constant/polyMesh/
+!constant/polyMesh/blockMeshDict
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Python cache
+__pycache__/
+*.pyc
+
+# C++ object files
+*.o
+*.so
+
+# Temporary files
+*.tmp
+
+# Build directories
+platforms/
