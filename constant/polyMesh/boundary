@@ -1,0 +1,48 @@
+/*---------------------------------------------------------------------------*\
+|       OpenFoam mesh file generated using HyperMesh Version: 2022.2.0.27     |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+5
+(
+    wall_fingers
+    {
+        type            wall;
+        nFaces          276627;
+        startFace       5966496;
+    }
+    wall_plenum
+    {
+        type            wall;
+        nFaces          56132;
+        startFace       6243123;
+    }
+    inlet
+    {
+        type            patch;
+        nFaces          16972;
+        startFace       6299255;
+    }
+    wall_oven
+    {
+        type            wall;
+        nFaces          26071;
+        startFace       6316227;
+    }
+    outlet
+    {
+        type            patch;
+        nFaces          20766;
+        startFace       6342298;
+    }
+)
+
+// ************************************************************************* //
