@@ -27,7 +27,6 @@ postProcessing/
 
 # Mesh conversion files
 constant/polyMesh/
-!constant/polyMesh/blockMeshDict
 
 # Backup files
 *~
